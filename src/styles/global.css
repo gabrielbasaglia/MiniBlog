@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply flex justify-center items-center text-center bg-slate-500;
+  -webkit-font-smoothing: antialiased;
+}
