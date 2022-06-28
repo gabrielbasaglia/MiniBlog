@@ -48,7 +48,7 @@ export const Register = () => {
         <label className="flex flex-col mb-1 w-3/4">
           <span className="mb-2 font-bold text-left">Nome:</span>
           <input
-            className="placeholder:italic placeholder:text-slate-400 border-b-2 bg-transparent"
+            className="mb-2 placeholder:italic placeholder:text-slate-400 border-b-2 bg-transparent"
             type="text"
             name="displayName"
             required
@@ -60,7 +60,7 @@ export const Register = () => {
         <label className="flex flex-col mb-1 w-3/4">
           <span className="mb-2 font-bold text-left">E-mail:</span>
           <input
-            className="placeholder:italic placeholder:text-slate-400 border-b-2 bg-transparent  "
+            className="mb-2 placeholder:italic placeholder:text-slate-400 border-b-2 bg-transparent"
             type="email"
             name="email"
             required
@@ -72,7 +72,7 @@ export const Register = () => {
         <label className="flex flex-col mb-1 w-3/4">
           <span className="mb-2 font-bold text-left">Senha:</span>
           <input
-            className="placeholder:italic placeholder:text-slate-400 border-b-2 bg-transparent "
+            className="mb-2 placeholder:italic placeholder:text-slate-400 border-b-2 bg-transparent"
             type="password"
             name="password"
             required
@@ -81,12 +81,12 @@ export const Register = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        <label className="flex flex-col mb-4 w-3/4">
+        <label className="flex flex-col mb-1 w-3/4">
           <span className="mb-2 font-bold text-left">
             Confirmação de senha:
           </span>
           <input
-            className="placeholder:italic placeholder:text-slate-400 border-b-2 bg-transparent "
+            className="mb-2 placeholder:italic placeholder:text-slate-400 border-b-2 bg-transparent"
             type="password"
             name="confirmpassword"
             required
@@ -106,7 +106,7 @@ export const Register = () => {
           </button>
         )}
         {error && (
-          <p className=" flex items-center justify-center text-sm mt-2 ring-2 rounded-lg ring-violet-500 ">
+          <p className=" flex items-center justify-center text-sm mt-2 ring-2 rounded-lg ring-violet-500">
             {error}
           </p>
         )}
